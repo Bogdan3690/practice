@@ -1,0 +1,40 @@
+
+p{
+    margin: 0;
+}
+
+.btn{
+    display: inline-block;
+    width: 150px;
+    color: aqua;
+    background-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-color: green;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+span{
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    display: inline-block;
+    margin-right: 25px;
+    vertical-align: middle;
+}
+
+.box{
+    width: 600px;
+    border: 2px solid green;
+    padding: 30px;
+}
+
+p{
+    border: 2px dashed green;
+    padding: 20px;
+}
+
+p:first-child{
+    margin-bottom: 10px;
+}
