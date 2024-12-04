@@ -63,12 +63,12 @@ p:first-child{
 .link{
     margin-right: 20px;
 }
+
 .list {
     padding: 0; 
    display: flex; 
     list-style: none;
  }
- 
 
   .list-item {
    width: 350px; 
@@ -78,6 +78,7 @@ p:first-child{
    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
      0px 1px 3px rgba(0, 0, 0, 0.12); 
  }
+
 .list-item > .title {
    margin-top: 0;
  }
@@ -104,4 +105,16 @@ p:first-child{
 
 .icon-code::before{
     background-image: url(./img/delivery-icon.png);
+}
+
+.bg-box::before{
+    display: block;
+    content: '';
+    width: 1396px;
+    height: 880px;
+    background-color: #0ea900;
+    background-image: url(./img/house.png), url(./img/tree-icon-1550.jpg), url(./img/lamp-png-34914.png), url(./img/hedgehog.png), url(./img/donut.png);
+    background-repeat: no-repeat, repeat-x, repeat-x, repeat-y, repeat-y;
+    background-position: center, bottom, top, left, right;
+    background-size: 500px, 150px, 70px, 70px, 70px;
 }
