@@ -118,3 +118,15 @@ p:first-child{
     background-position: center, bottom, top, left, right;
     background-size: 500px, 150px, 70px, 70px, 70px;
 }
+
+/* multibg */
+
+.overlay{
+    width: 1600px;
+    height: 480px;
+    outline: solid red 2px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: linear-gradient(to bottom right, red 30%, blue 50%);
+}
+
