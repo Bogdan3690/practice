@@ -19,12 +19,12 @@ span{
     margin-right: 25px;
     vertical-align: middle;
 }
-
+/* 
 .box{
     width: 600px;
     border: 2px solid green;
     padding: 30px;
-}
+} */
 
 p{
     border: 2px dashed green;
@@ -128,5 +128,22 @@ p:first-child{
     margin-right: auto;
     margin-left: auto;
     background-image: linear-gradient(to bottom right, red 30%, blue 50%);
+}
+
+.container{
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    flex-wrap: wrap;
+    width: 1500px;
+    gap: 50px;
+}
+
+.box{
+    flex-basis: calc((100% - 50px) / 2);
+    outline: solid 2px red;
+    height: 200px;
+    box-shadow: 21px 50px 35px 15px rgb(0, 0, 0),
+    10px 30px 10px 10px red;
 }
 
