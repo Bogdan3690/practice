@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="model.css" />
+    <title>Model</title>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+      reiciendis harum cumque doloremque dignissimos asperiores similique
+      officia, quas, necessitatibus, optio qui repellendus deleniti cum esse
+      sunt consectetur nulla est odit. Iure, recusandae veniam. Temporibus at
+      fugiat, sequi debitis perferendis odio ratione est magnam soluta quam
+      dolores esse et aliquam aliquid porro perspiciatis? Facilis nihil iusto
+      amet possimus dignissimos quaerat vel, facere, voluptatibus velit numquam
+      dolorem? Nisi provident modi, aliquid assumenda consectetur odit quis
+      voluptatem magnam distinctio corrupti eum ut tempore asperiores illo
+      veritatis qui ex nobis numquam error corporis. Perferendis quasi nisi
+      distinctio officia reiciendis error iure id dignissimos quo dolore
+      asperiores inventore beatae dolores alias commodi quam accusamus, debitis
+      nostrum. Eaque quos voluptas molestiae a cumque, autem aut alias
+      blanditiis dolore esse tempora dignissimos, atque corrupti, ducimus ea
+      aperiam quis quibusdam reiciendis amet repellendus laudantium. Commodi
+      blanditiis nulla id quos deleniti, reprehenderit quidem ducimus maiores
+      sequi cumque optio. Dolores repudiandae veritatis unde, consectetur sunt
+      officia sint enim cumque quas saepe praesentium beatae recusandae quo
+      commodi veniam iure itaque voluptatum sed architecto dicta laboriosam
+      assumenda culpa quis fuga! Quos voluptatibus quaerat minus rem itaque at,
+      natus mollitia sint officia veniam consequuntur facilis eaque ad in
+      voluptate earum maiores, corporis, voluptas sit qui. Aperiam earum
+      adipisci sed molestiae iusto perferendis architecto! Necessitatibus culpa
+      rem cumque ut commodi! Deserunt esse facilis ipsam fuga tempora, commodi
+      minima fugit impedit voluptatum, architecto aperiam repudiandae debitis
+      asperiores hic similique deleniti vero laborum illum quibusdam accusantium
+      aut culpa! Aspernatur pariatur accusantium quae inventore totam possimus.
+      Totam deserunt magnam quas nesciunt quos perspiciatis recusandae possimus
+      dolorem saepe, laudantium dignissimos nemo nulla, quaerat illum iure?
+      Dolor reprehenderit consequatur maiores est sit in repellat natus
+      repellendus tenetur necessitatibus nostrum, nam sequi accusamus illum
+      nesciunt velit suscipit laborum excepturi fuga amet quaerat magni
+      voluptate? Architecto, obcaecati. Atque, exercitationem! Culpa eum,
+      laudantium delectus, reiciendis qui a rerum nesciunt ea voluptatibus
+      molestiae repudiandae voluptate assumenda, numquam sequi perferendis
+      ratione ab ducimus earum minus beatae laborum odio rem suscipit dolorum!
+      Itaque delectus libero blanditiis, eum, numquam tenetur eos nihil suscipit
+      aliquam officia deserunt molestias illum sint mollitia? Tempore in, ipsam
+      exercitationem, natus nemo aperiam tenetur officiis dignissimos inventore
+      repellat, iste et nesciunt voluptas tempora necessitatibus quis culpa
+      magnam? Dolorum, fugiat deleniti? Debitis ducimus tenetur error soluta
+      ipsam explicabo, voluptatem, dicta, nisi quo suscipit impedit doloribus
+      quia. Ab molestias nulla id voluptatem ratione, unde ullam nihil explicabo
+      necessitatibus illo totam provident sed ipsa modi architecto cumque
+      quaerat hic officiis fuga. Sit, quam! Saepe cum omnis neque, adipisci odio
+      quibusdam, illum fugit quidem voluptates earum ratione nihil autem commodi
+      vel perferendis. Facilis numquam labore fugit illo aliquid vitae
+      dignissimos ducimus tempora! Laudantium itaque aliquam assumenda molestiae
+      amet ut blanditiis reprehenderit exercitationem non ex quidem mollitia,
+      eum ullam quos suscipit sunt impedit maiores eligendi. Magni recusandae
+      expedita ea qui nemo alias nam eveniet facere blanditiis minima nesciunt
+      nulla quam ipsam velit distinctio quis consectetur officia, mollitia odio
+      totam temporibus. Quisquam culpa ipsa, unde velit officiis similique neque
+      nisi optio ratione, consectetur eveniet? Ipsum dolorum unde deleniti.
+    </p>
+    <button type="button" data-open-modal>Open Model</button>
+    <div class="backdrop is-hidden" data-backdrop>
+        <div class="model">
+            <h1 class="text">Welcome</h1>
+            <button type="button" data-close-modal>Close Model</button>
+        </div>
+    </div>
+    <script>
+        const refs = {
+          openModalBtn: document.querySelector("[data-open-modal]"),
+          closeModalBtn: document.querySelector("[data-close-modal]"),
+          backdrop: document.querySelector("[data-backdrop]"),
+        };
+  
+        
+        refs.openModalBtn.addEventListener("click", toggleModal);
+        refs.closeModalBtn.addEventListener("click", toggleModal);
+  
+        refs.backdrop.addEventListener("click", logBackdropClick);
+  
+        function toggleModal() {
+          refs.backdrop.classList.toggle("is-hidden");
+        }
+  
+        function logBackdropClick() {
+          console.log("Это клик в бекдроп");
+        }
+      </script>
+  </body>
+</html>
