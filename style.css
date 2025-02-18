@@ -26,9 +26,17 @@ span{
     padding: 30px;
 } */
 
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 p{
     border: 2px dashed green;
     padding: 20px;
+    width: 350px;
+    height: 100px;
 }
 
 p:first-child{
@@ -46,6 +54,7 @@ p:first-child{
     padding-right: 10px;
     padding-bottom: 20px;
     margin-bottom: 30px;
+    border-radius: 50%;
 }
 /* hw 2 */
 .profile-image{
@@ -117,6 +126,8 @@ p:first-child{
     background-repeat: no-repeat, repeat-x, repeat-x, repeat-y, repeat-y;
     background-position: center, bottom, top, left, right;
     background-size: 500px, 150px, 70px, 70px, 70px;
+    border-radius: 50%;
+
 }
 
 /* multibg */
@@ -211,4 +222,34 @@ span{
     position: absolute;
     right: 0;
     bottom: 0;
+}
+
+.div{
+    border: solid 5px purple;
+    width: 460px;
+    border-radius: 60px;
+    overflow: hidden;
+}
+
+.second-div{
+    display: flex;
+}
+
+p:nth-child(1){
+    overflow: scroll;
+}
+
+
+p:nth-child(2){
+    overflow: auto;
+}
+
+p:nth-child(3){
+    overflow: hidden;
+}
+
+
+
+p:nth-child(4){
+    overflow: visible;
 }
