@@ -1,0 +1,60 @@
+.box{
+    background-color: #00ff33;
+    width: 500px;
+    height: 500px;
+    position: relative;
+  }
+
+  .circle{
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /* animation-name: circle;
+    animation-duration: 2000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both; */
+    animation: circle 2000ms linear infinite,
+    changeBgColor 2000ms linear infinite;
+
+  }
+
+  .circle:hover{
+    animation-play-state: paused;
+  }
+
+  h1{
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: rubberBand 2000ms linear infinite;
+  }
+
+  @keyframes circle{
+    0%{
+    left: 0;
+    }
+    50%{
+        transform: scale(50%);
+    }
+    100%{
+        left: 80%;
+    }
+  }
+
+  @keyframes changeBgColor {
+    0% {
+      background-color: teal;
+    }
+  
+    50% {
+      background-color: orange;
+    }
+  
+    100% {
+      background-color: deepskyblue;
+    }
+  }
