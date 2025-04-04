@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .box {
+    height: 190px;
+    width: calc(50% - 20px);
+    margin: 10px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  }
+
+   /* cat */
+//    .cat{
+//    background: url("../img/cat.png") no-repeat center;
+//   }
+  
+//   /* bird */
+//   .bird{
+//    background-image: url(../img/bird.png);
+
+//   } 
+  
+//   /* dog */
+//   .dog{
+//    background-image: url(../img/dog.png);
+//   }
+  
+//   /* turtle */
+//   .turtle{ 
+//    background-image: url(../img/turtle.png);
+//    }
+
+   $animals:"cat", "bird", "dog", "turtle", "chiken";
+   $skils:"html", "css", "js";
+@mixin ganaradeBg($list){
+    @each $animalName in $list{
+        .#{$animalName}{ 
+            background-image: url(../img/#{$animalName}.png);
+            }
+            
+       }
+}
+@include ganaradeBg($animals);
+@include ganaradeBg($skils);
+   /* bgi -> bgr -> bgp -> bgs */

@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box {
+  height: 190px;
+  width: calc(50% - 20px);
+  margin: 10px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+/* cat */
+.cat {
+  background-image: url(../img/cat.png);
+}
+
+.bird {
+  background-image: url(../img/bird.png);
+}
+
+.dog {
+  background-image: url(../img/dog.png);
+}
+
+.turtle {
+  background-image: url(../img/turtle.png);
+}
+
+.chiken {
+  background-image: url(../img/chiken.png);
+}
+
+.html {
+  background-image: url(../img/html.png);
+}
+
+.css {
+  background-image: url(../img/css.png);
+}
+
+.js {
+  background-image: url(../img/js.png);
+}
+
+/* bgi -> bgr -> bgp -> bgs *//*# sourceMappingURL=main.css.map */
