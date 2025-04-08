@@ -1,50 +1,104 @@
+.features-set, .reviews-set {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.reviews-item:nth-child(1) {
+  background-color: #795548;
+}
+
+.reviews-item:nth-child(2) {
+  background-color: #607D8B;
+}
+
+.reviews-item:nth-child(3) {
+  background-color: #7B1FA2;
+}
+
+.features-item:nth-child(1) {
+  background-color: #F44336;
+}
+
+.features-item:nth-child(2) {
+  background-color: #3F51B5;
+}
+
+.features-item:nth-child(3) {
+  background-color: #4CAF50;
+}
+
+.features-item:nth-child(4) {
+  background-color: #00BCD4;
+}
+
+.features-item:nth-child(5) {
+  background-color: #E91E63;
+}
+
+.features-item:nth-child(6) {
+  background-color: #009688;
+}
+
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  width: 940px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  outline: solid 2px green;
+}
+@media screen and (max-width: 767px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
-.box {
-  height: 190px;
-  width: calc(50% - 20px);
-  margin: 10px;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
+.reviews-set {
+  display: flex;
 }
 
-/* cat */
-.cat {
-  background-image: url(../img/cat.png);
+.reviews-item {
+  text-align: center;
+  padding: 40px;
+  color: #fff;
+  font-size: 48px;
+  width: 33.3333%;
 }
 
-.bird {
-  background-image: url(../img/bird.png);
+.section {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
-.dog {
-  background-image: url(../img/dog.png);
+.section-title {
+  margin-top: 0;
+  margin-bottom: 24px;
 }
 
-.turtle {
-  background-image: url(../img/turtle.png);
+.section {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
-.chiken {
-  background-image: url(../img/chiken.png);
+.section-title {
+  margin-top: 0;
+  margin-bottom: 24px;
 }
 
-.html {
-  background-image: url(../img/html.png);
-}
-
-.css {
-  background-image: url(../img/css.png);
-}
-
-.js {
-  background-image: url(../img/js.png);
-}
-
-/* bgi -> bgr -> bgp -> bgs *//*# sourceMappingURL=main.css.map */
+.features-item {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  font-size: 32px;
+}/*# sourceMappingURL=main.css.map */
