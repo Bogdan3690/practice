@@ -53,8 +53,12 @@
   }
   .reviews-set {
     @extend %list;
-  
     display: flex;
+    @media screen and (min-width: $mobile) {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
   }
   
   .reviews-item {
@@ -63,8 +67,6 @@
     color: #fff;
     font-size: 48px;
     width: 33.3333%;
-  
-    
   }
 
   .section {
@@ -89,6 +91,11 @@
   
   .features-set {
     @extend %list;
+    @media screen and (min-width: $tablet){
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
   }
   
   .features-item {
@@ -97,8 +104,28 @@
     padding-bottom: 20px;
     color: #fff;
     font-size: 32px;
+    @media screen and (min-width: $tablet){
+      flex-basis: calc((100% - 10px) / 2);
+    }
+    @media screen and (min-width: $desktop){
+      flex-basis: calc((100% - 10px) / 3);
+    }
   }
   
-  
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px; 
+ 
+  }
 
-  
+  .navigation{
+    @media screen  and (min-width: $tablet){
+     display: flex;
+     flex-direction: column;
+    }
+    @media screen and (max-width: 767px){
+      display: none;
+    }
+  }
